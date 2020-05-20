@@ -42,6 +42,7 @@ def get_english_meaning(file_path, emote )
     res = key
   end
   }
+  if(res)
   res
 
 end
