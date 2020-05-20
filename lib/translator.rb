@@ -20,9 +20,11 @@ end
 
 
 
-def get_japanese_emoticon(path, )
+def get_japanese_emoticon(file_path, emote )
   # code goes here
-  emoticons = load_library(emoticons.YAML)
+  emoticons = load_library(file_pathL)
+  
+  hash.each{|key, value|
 end
 
 def get_english_meaning
