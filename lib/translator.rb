@@ -18,22 +18,9 @@ new_hash[key][:japanese] = value.last
 new_hash
 end
 
-# res = data.each_with_object({}){ |(key, value), final_hash|
-#     value.each{|inner_key, names|
-#       names.each{ |name|
-#         if !final_hash[name]
-#           final_hash[name] = {}
-#         end
-#         if !final_hash[name][key]
-#           final_hash[name][key] = []
-#         end
-#         final_hash[name][key].push(inner_key.to_s)
-#       }
-#     }
-#   }
 
 
-def get_japanese_emoticon
+def get_japanese_emoticon(path, )
   # code goes here
   emoticons = load_library(emoticons.YAML)
 end
