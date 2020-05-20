@@ -36,10 +36,13 @@ def get_english_meaning(file_path, emote )
   # code goes here
   
   emoticons = load_library(file_path)
-  
-  hash = emoticons.find{|key, value|
-  emoticons[key][:japanese] == emote
+  res = ""
+  hash = emoticons.each{|key, value|
+  if(emoticons[key][:japanese] == emote
+    res = emoticons[key]
+    break
+  end
   }
-  hash[key]
+  res
 
 end
