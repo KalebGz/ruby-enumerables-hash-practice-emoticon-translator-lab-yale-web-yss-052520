@@ -29,7 +29,7 @@ def get_japanese_emoticon(file_path, emote )
   emoticons[key][japanese] == emote
   }
   hash[:japanese]
-  }
+  
 end
 
 def get_english_meaning
@@ -41,5 +41,5 @@ def get_english_meaning
   emoticons[key][japanese] == emote
   }
   hash[key]
-  }
+
 end
