@@ -23,7 +23,7 @@ end
 def get_japanese_emoticon(file_path, emote )
   # code goes here
   
-  emoticons = load_library(file_pathL)
+  emoticons = load_library(file_path)
   
   hash = emoticons.find{|key, value|
   emoticons[key][japanese] == emote
@@ -32,10 +32,10 @@ def get_japanese_emoticon(file_path, emote )
   
 end
 
-def get_english_meaning
+def get_english_meaning(file_path, emote )
   # code goes here
   
-  emoticons = load_library(file_pathL)
+  emoticons = load_library(file_path)
   
   hash = emoticons.find{|key, value|
   emoticons[key][japanese] == emote
