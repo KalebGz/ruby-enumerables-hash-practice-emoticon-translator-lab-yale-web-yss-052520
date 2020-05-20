@@ -22,12 +22,20 @@ end
 
 def get_japanese_emoticon(file_path, emote )
   # code goes here
-
+  
+  emoticons = load_library(file_pathL)
+  
+  Hash = emoticons.find{|key, value|
+  emoticons[key][japanese] == emote
+  }
+  hash[:japanese]
+  }
 end
 
 def get_english_meaning
   # code goes here
-    emoticons = load_library(file_pathL)
+  
+  emoticons = load_library(file_pathL)
   
   Hash = emoticons.find{|key, value|
   emoticons[key][japanese] == emote
