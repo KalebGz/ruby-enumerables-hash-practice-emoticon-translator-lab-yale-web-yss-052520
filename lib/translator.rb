@@ -24,8 +24,8 @@ def get_japanese_emoticon(file_path, emote)
   # code goes here
   
   emoticons = load_library(file_path)
-  
-  hash = emoticons.find{|key, value|
+  res = "Sorry, that emoticon was not found"
+  hash = emoticons.e{|key, value|
   emoticons[key][:english] == emote
   }
   binding.pry
