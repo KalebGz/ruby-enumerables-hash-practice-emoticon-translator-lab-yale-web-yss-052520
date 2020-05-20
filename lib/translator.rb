@@ -14,7 +14,7 @@ new_hash[key] = {}
 new_hash[key][:english] =  value.first
 new_hash[key][:japanese] = value.last
 }
-binding.pry
+# binding.pry
 new_hash
 end
 
