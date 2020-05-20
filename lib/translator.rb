@@ -39,7 +39,7 @@ def get_english_meaning(file_path, emote )
   res = ""
   hash = emoticons.each{|key, value|
   if(emoticons[key][:japanese] == emote)
-    res = emoticons[key]
+    res = key
   end
   }
   res
