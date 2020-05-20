@@ -12,7 +12,7 @@ new_hash = {}
 hash.each{|key, value|
 new_hash[key] = {}
 new_hash[key][:english] =  value.first
-new_hashkey[:japanese] = value.last
+new_hash[key][:japanese] = value.last
 }
 binding.pry
 new_hash
