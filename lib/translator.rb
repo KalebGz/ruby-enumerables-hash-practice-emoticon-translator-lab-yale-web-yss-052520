@@ -42,7 +42,9 @@ def get_english_meaning(file_path, emote )
     res = key
   end
   }
-  if(res)
+  if(res.is_empty)
+    return 
+  end
   res
 
 end
