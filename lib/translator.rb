@@ -43,7 +43,7 @@ def get_english_meaning(file_path, emote )
   end
   }
   if(res.is_empty)
-    return 
+    return "Sorry, that emoticon was not found"
   end
   res
 
