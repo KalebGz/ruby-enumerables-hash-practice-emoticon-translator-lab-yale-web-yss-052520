@@ -25,11 +25,13 @@ def get_japanese_emoticon(file_path, emote)
   
   emoticons = load_library(file_path)
   res = "Sorry, that emoticon was not found"
-  hash = emoticons.e{|key, value|
-  emoticons[key][:english] == emote
+  hash = emoticons.each{|key, value|
+  if( emoticons[key][:english] == emote)
+    res = emoticons[key][japanese]
+  end
   }
   binding.pry
-  hash[:japanese]
+  res
 end
 
 def get_english_meaning(file_path, emote )
